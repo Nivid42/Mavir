@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['savesnapshot_0',['saveSnapshot',['../class_file_utils.html#ae266b8165e5745459427546dd2d08ca9',1,'FileUtils']]],
+  ['seek_1',['seek',['../classplog_1_1util_1_1_file.html#a05a63c1853f911cf6c38ad5c394a4543',1,'plog::util::File']]],
+  ['separator_2',['separator',['../classplog_1_1_hex_dump.html#a7da96e8a869f5df3a6cd9a57bf6ebf48',1,'plog::HexDump::separator(const char *digitSeparator)'],['../classplog_1_1_hex_dump.html#ac3dab77b746e2084c389eceef995bafb',1,'plog::HexDump::separator(const char *digitSeparator, const char *groupSeparator)']]],
+  ['setcolor_3',['setColor',['../classplog_1_1_color_console_appender.html#a22e2f22c6022d069630d6628a7401716',1,'plog::ColorConsoleAppender']]],
+  ['setfilename_4',['setFileName',['../classplog_1_1_rolling_file_appender.html#ac3c47c0d447ee025b62ca1d4f085b491',1,'plog::RollingFileAppender']]],
+  ['setmaxfiles_5',['setMaxFiles',['../classplog_1_1_rolling_file_appender.html#a103e1624443ae253332ec1cbd3b0b6e9',1,'plog::RollingFileAppender']]],
+  ['setmaxfilesize_6',['setMaxFileSize',['../classplog_1_1_rolling_file_appender.html#a7a8704c53ff7c5cc2c5ed7779d28ce01',1,'plog::RollingFileAppender']]],
+  ['setmaxseverity_7',['setMaxSeverity',['../classplog_1_1_logger.html#a0508cce9f5200ed0913d2d5ef7cc78da',1,'plog::Logger']]],
+  ['severity_8',['Severity',['../namespaceplog.html#aedf8d68ce41dbf94f1f150faa06b50f0',1,'plog']]],
+  ['severity_2eh_9',['Severity.h',['../_severity_8h.html',1,'']]],
+  ['severityfromstring_10',['severityFromString',['../namespaceplog.html#a067a65a53e69845e6840411d6eaae767',1,'plog']]],
+  ['severitytostring_11',['severityToString',['../namespaceplog.html#ac8ec2b4a7be2114ffdee50c3b863eb8a',1,'plog']]],
+  ['showmenu_12',['ShowMenu',['../class_menu.html#a98ba1ceebfd14996179c5111e09c31bd',1,'Menu']]],
+  ['singleton_13',['Singleton',['../classplog_1_1util_1_1_singleton.html',1,'plog::util::Singleton&lt; T &gt;'],['../classplog_1_1util_1_1_singleton.html#a3ce81d9a8b1d87c6c3865d28b9b7609f',1,'plog::util::Singleton::Singleton()']]],
+  ['singleton_3c_20logger_3c_20instanceid_20_3e_20_3e_14',['Singleton&lt; Logger&lt; instanceId &gt; &gt;',['../classplog_1_1util_1_1_singleton.html',1,'plog::util']]],
+  ['singleton_3c_20t_20_3e_3a_3am_5finstance_15',['m_instance',['../namespaceplog_1_1util.html#aa0c522af7cc90442e7d54d95c1827bbf',1,'plog::util']]],
+  ['splitfilename_16',['splitFileName',['../namespaceplog_1_1util.html#a213ef20b4d0a99026624c936a22c5c97',1,'plog::util']]],
+  ['startmonitoring_17',['StartMonitoring',['../class_startup_folder_monitor.html#ae4577d09fb0dbd2f7df2be49c48d0f76',1,'StartupFolderMonitor::StartMonitoring()'],['../class_vbs_protector.html#af6cca042605df1b63abdf37b7905f604',1,'VbsProtector::StartMonitoring()']]],
+  ['startupfoldermonitor_18',['StartupFolderMonitor',['../class_startup_folder_monitor.html',1,'StartupFolderMonitor'],['../class_startup_folder_monitor.html#a75100cfff7c0692725275fe8628c3ae2',1,'StartupFolderMonitor::StartupFolderMonitor()']]],
+  ['startupfoldermonitor_2ecpp_19',['StartupFolderMonitor.cpp',['../_startup_folder_monitor_8cpp.html',1,'']]],
+  ['startupfoldermonitor_2eh_20',['StartupFolderMonitor.h',['../_startup_folder_monitor_8h.html',1,'']]],
+  ['stopmonitoring_21',['StopMonitoring',['../class_startup_folder_monitor.html#a1de7041e6e4613f969f266e31d67ae90',1,'StartupFolderMonitor::StopMonitoring()'],['../class_vbs_protector.html#a0e35bac272165e9171cdfd76b90bd891',1,'VbsProtector::StopMonitoring()']]],
+  ['streamstderr_22',['streamStdErr',['../namespaceplog.html#a33351a70d3aa985291596008e03da4a7a5e71f33fb02759e98b6a7bf1ab294b7b',1,'plog']]],
+  ['streamstdout_23',['streamStdOut',['../namespaceplog.html#a33351a70d3aa985291596008e03da4a7a717168b1e207b95e7422bb622597a355',1,'plog']]],
+  ['system_24',['System',['../class_vbs_protector.html#ae14b53b1e6b7ccee4b1eb96ffbb790c1aa45da96d0bf6575970f2d27af22be28a',1,'VbsProtector']]]
+];

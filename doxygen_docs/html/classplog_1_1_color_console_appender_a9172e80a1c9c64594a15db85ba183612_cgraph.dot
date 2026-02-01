@@ -1,0 +1,15 @@
+digraph "plog::ColorConsoleAppender::write"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="plog::ColorConsoleAppender\l::write",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="plog::ColorConsoleAppender\l::resetColor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classplog_1_1_color_console_appender.html#afab391eb6d85aeedf9967bd2d30a6043",tooltip=" "];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="plog::ColorConsoleAppender\l::setColor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classplog_1_1_color_console_appender.html#a22e2f22c6022d069630d6628a7401716",tooltip=" "];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="plog::ConsoleAppender\l::writestr",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classplog_1_1_console_appender.html#aae4ba93cd16de16da0c1c1f0aaac7149",tooltip=" "];
+}

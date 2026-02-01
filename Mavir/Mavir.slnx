@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Mavir/Mavir.vcxproj" Id="321da41c-264c-44de-8815-f3d4350e3759" />
+</Solution>

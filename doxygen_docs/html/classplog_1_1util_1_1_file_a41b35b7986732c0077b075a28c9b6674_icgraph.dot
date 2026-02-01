@@ -1,0 +1,13 @@
+digraph "plog::util::File::rename"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="plog::util::File::rename",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="plog::RollingFileAppender\l::rollLogFiles",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classplog_1_1_rolling_file_appender.html#a70622b2fedf13a53a9ae00759201f995",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="plog::RollingFileAppender\l::write",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classplog_1_1_rolling_file_appender.html#ae4d6087ac7c013c111d822a4522b93a9",tooltip=" "];
+}

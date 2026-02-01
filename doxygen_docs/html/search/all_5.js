@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['g_5fexedirectory_0',['g_exeDirectory',['../main_8cpp.html#a374c9b26ef4ee49e0971bba4701e1abf',1,'g_exeDirectory:&#160;main.cpp'],['../_startup_folder_monitor_8cpp.html#a374c9b26ef4ee49e0971bba4701e1abf',1,'g_exeDirectory:&#160;main.cpp']]],
+  ['g_5fhetwprovider_1',['g_hETWProvider',['../class_e_t_w_handler.html#a84b456cb975ef5d4193e60a6985bcf54',1,'ETWHandler']]],
+  ['g_5floggerinitialized_2',['g_loggerInitialized',['../class_logger.html#a7e50e4b06c8c63d60c935d286559aa1b',1,'Logger']]],
+  ['g_5frunning_3',['g_running',['../main_8cpp.html#ac9dba60f7f8b56a30d77cfbfe1823fca',1,'main.cpp']]],
+  ['get_4',['get',['../namespaceplog.html#a1329f1c114738eb10106f3670bd25c1a',1,'plog::get()'],['../namespaceplog.html#a6dbf6eceea29b66f231c8aa0796b690d',1,'plog::get()']]],
+  ['getfile_5',['getFile',['../classplog_1_1_record.html#aed55bd27308b2293927630ad54e61138',1,'plog::Record']]],
+  ['getfilesinfolder_6',['getFilesInFolder',['../class_file_utils.html#aa6e13c5192158fa42a8ed43a6effc5d7',1,'FileUtils']]],
+  ['getfunc_7',['getFunc',['../classplog_1_1_record.html#a5da59bd45e3b983076987ffca2f16b25',1,'plog::Record']]],
+  ['getinstance_8',['getInstance',['../classplog_1_1util_1_1_singleton.html#a45c5a51e6c0949334360dc8463726294',1,'plog::util::Singleton']]],
+  ['getinstanceid_9',['getInstanceId',['../classplog_1_1_record.html#ae458a3abd76950e8130e6fc60001bb25',1,'plog::Record']]],
+  ['getline_10',['getLine',['../classplog_1_1_record.html#ab5c1e137116536fe49e9f50bb441cb8b',1,'plog::Record']]],
+  ['getmaxseverity_11',['getMaxSeverity',['../classplog_1_1_logger.html#a2d4333eb3d404c2680f575e669cadd51',1,'plog::Logger']]],
+  ['getmessage_12',['getMessage',['../classplog_1_1_record.html#a0da4d70ff45932bafaa28927eff554fe',1,'plog::Record']]],
+  ['getobject_13',['getObject',['../classplog_1_1_record.html#ac0441ee0b7915657d4885aa0d3f2a941',1,'plog::Record']]],
+  ['getseverity_14',['getSeverity',['../classplog_1_1_record.html#ae4dc669ba3fe44a922f7b0f0c7f8a0da',1,'plog::Record']]],
+  ['gettid_15',['getTid',['../classplog_1_1_record.html#a1eb389624fef0f4d27f307510cfd82ef',1,'plog::Record']]],
+  ['gettid_16',['gettid',['../namespaceplog_1_1util.html#add2656286e84f4025dfca7c3053be004',1,'plog::util']]],
+  ['gettime_17',['getTime',['../classplog_1_1_record.html#ae209db8c07831c35a515035d3d731ba2',1,'plog::Record']]],
+  ['gmtime_5fs_18',['gmtime_s',['../namespaceplog_1_1util.html#a10bab2b413e194f8e30770cff3cb00c7',1,'plog::util']]],
+  ['group_19',['group',['../classplog_1_1_hex_dump.html#ab55acac691369176f89e8ffe5f077759',1,'plog::HexDump']]]
+];

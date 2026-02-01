@@ -1,0 +1,39 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [id="Node000000",label="plog::IAppender",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classplog_1_1_i_appender.html",tooltip=" "];
+  Node0 -> Node1 [id="edge4_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 [id="Node000001",label="plog::AndroidAppender\l\< Formatter \>",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classplog_1_1_android_appender.html",tooltip=" "];
+  Node0 -> Node2 [id="edge5_Node000000_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="plog::ArduinoAppender\l\< Formatter \>",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classplog_1_1_arduino_appender.html",tooltip=" "];
+  Node0 -> Node3 [id="edge6_Node000000_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="plog::ConsoleAppender\l\< Formatter \>",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classplog_1_1_console_appender.html",tooltip=" "];
+  Node3 -> Node4 [id="edge7_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="plog::ColorConsoleAppender\l\< Formatter \>",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classplog_1_1_color_console_appender.html",tooltip=" "];
+  Node0 -> Node5 [id="edge8_Node000000_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="plog::DebugOutputAppender\l\< Formatter \>",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classplog_1_1_debug_output_appender.html",tooltip=" "];
+  Node0 -> Node6 [id="edge9_Node000000_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="plog::DynamicAppender",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classplog_1_1_dynamic_appender.html",tooltip=" "];
+  Node0 -> Node7 [id="edge10_Node000000_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="plog::EventLogAppender\l\< Formatter \>",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classplog_1_1_event_log_appender.html",tooltip=" "];
+  Node0 -> Node8 [id="edge11_Node000000_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="plog::Logger\< instanceId \>",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classplog_1_1_logger.html",tooltip=" "];
+  Node0 -> Node15 [id="edge12_Node000000_Node000015",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node15 [id="Node000015",label="plog::RollingFileAppender\l\< Formatter, Converter \>",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classplog_1_1_rolling_file_appender.html",tooltip=" "];
+  Node10 [id="Node000010",label="plog::util::NonCopyable",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classplog_1_1util_1_1_non_copyable.html",tooltip=" "];
+  Node10 -> Node9 [id="edge13_Node000010_Node000009",dir="back",color="firebrick4",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="plog::util::Singleton\l\< Logger\< instanceId \> \>",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classplog_1_1util_1_1_singleton.html",tooltip=" "];
+  Node9 -> Node8 [id="edge14_Node000009_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node10 -> Node11 [id="edge15_Node000010_Node000011",dir="back",color="firebrick4",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="plog::util::File",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classplog_1_1util_1_1_file.html",tooltip=" "];
+  Node10 -> Node12 [id="edge16_Node000010_Node000012",dir="back",color="firebrick4",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="plog::util::Mutex",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classplog_1_1util_1_1_mutex.html",tooltip=" "];
+  Node10 -> Node13 [id="edge17_Node000010_Node000013",dir="back",color="firebrick4",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="plog::util::MutexLock",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classplog_1_1util_1_1_mutex_lock.html",tooltip=" "];
+  Node10 -> Node14 [id="edge18_Node000010_Node000014",dir="back",color="firebrick4",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="plog::util::Singleton\< T \>",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classplog_1_1util_1_1_singleton.html",tooltip=" "];
+}
