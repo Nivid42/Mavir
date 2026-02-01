@@ -50,18 +50,16 @@ int main() {
     vbsUser.StartMonitoring();
     vbsSystem.StartMonitoring();
 
-    // Menü blockiert, bis User Exit wählt
     Menu::ShowMenu();
 
-    // Threads stoppen (falls Menu endet)
-    std::cout << "[+] Stoppe Hintergrund-Scans...\n";
+    std::cout << "[+] Stopping Background-Scans...\n";
     userStartupFolderMonitor.StopMonitoring();
     adminStartupFolderMonitor.StopMonitoring();
     vbsUser.StopMonitoring();
     vbsSystem.StopMonitoring();
 
-    PLOG_INFO << "[+] Mavir Antivirus beendet";
-    std::cout << "[+] Mavir Antivirus beendet. Auf Wiedersehen!\n";
+    PLOG_INFO << "[+] Mavir Antivirus terminated.";
+    std::cout << "[+] Mavir Antivirus terminated.\n";
 
     return 0;
 }
