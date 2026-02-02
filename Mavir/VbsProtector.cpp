@@ -1,8 +1,4 @@
 #include "VbsProtector.h"
-#include "Logger.h"
-#include <windows.h>
-#include <chrono>
-#include <thread>
 
 VbsProtector::VbsProtector(KeyType type) : keyType(type), running(false) {
     initializeKey();
@@ -24,11 +20,11 @@ void VbsProtector::StopMonitoring() {
 void VbsProtector::initializeKey() {
     LONG result = RegOpenKeyEx(
         (keyType == KeyType::User) ? HKEY_CURRENT_USER : HKEY_LOCAL_MACHINE,
-        L"Software\\Microsoft\\Windows Script Host\\Settings",
+        L"Software\\\\Microsoft\\\\Windows Script Host\\\\Settings",
         0, KEY_READ | KEY_WRITE | KEY_NOTIFY, &hKey
     );
 
-    if (result != ERROR_SUCCESS) { PLOG_ERROR << "Registry-Zugriff fehlgeschlagen: " << result; return; }
+    if (result != ERROR_SUCCESS) { PLOG_ERROR << "Registry access failed: " << result; return; }
 
     DWORD value = 0, type = REG_DWORD, size = sizeof(value);
     if (RegQueryValueEx(hKey, L"Enabled", nullptr, &type, reinterpret_cast<LPBYTE>(&value), &size) != ERROR_SUCCESS || value != 0) {
@@ -43,19 +39,21 @@ void VbsProtector::monitorLoop() {
 
     while (running) {
         RegNotifyChangeKeyValue(hKey, FALSE, REG_NOTIFY_CHANGE_LAST_SET, NULL, FALSE);
+        // OnTaskChange();  // Will be basically the handling of the suspicious Change
         if (RegQueryValueEx(hKey, L"Enabled", nullptr, &type, reinterpret_cast<LPBYTE>(&currValue), &size) == ERROR_SUCCESS) {
             if (currValue != 0) {
                 DWORD newValue = 0;
                 RegSetValueEx(hKey, L"Enabled", 0, REG_DWORD, reinterpret_cast<const BYTE*>(&newValue), sizeof(newValue));
-                MessageBox(NULL,
+                MessageBoxW(NULL,
                     (keyType == KeyType::User) ?
-                    L"Der USER VBS Registry Key wurde verändert!" :
-                    L"Der SYSTEM VBS Registry Key wurde verändert!",
-                    L"Mavir Antivirus - Warnung",
+                    L"USER VBS Registry Key was modified!" :
+                    L"SYSTEM VBS Registry Key was modified!",
+                    L"Mavir Antivirus - Warning",
                     MB_OK | MB_ICONWARNING
                 );
-                PLOG_WARNING << ".vbs Files wurden deaktiviert";
-                std::this_thread::sleep_for(std::chrono::milliseconds(50));
+                PLOG_WARNING << ".vbs Files were disabled";
+
+                std::this_thread::sleep_for(std::chrono::milliseconds(1)); // was earlier 50 ms but can be like a condition where malicious code executes exactly then
             }
         }
     }

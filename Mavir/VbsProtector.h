@@ -2,7 +2,9 @@
 #include <atomic>
 #include <thread>
 #include <windows.h>
+#include <chrono>
 #include "FileUtils.h"
+#include "Logger.h"
 
 class VbsProtector {
 public:
