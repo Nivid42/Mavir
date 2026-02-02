@@ -25,7 +25,7 @@ By Monitoring those 2 Factors we can almost say certain there is no Taskscheduli
   - Monitors Keys of HKLM & HKCU in the TaskScheduler Trees by utilizing RegNotifyChangeKeyValue which is a great way to check for changes but keeping performance on a normal level.<br>
   - Will soon also check with ReadDirectoryChangesW Directory changes of the .xml from Taskscheduler also with 0 polling and no perfomance issues :)  <br>
 
-# Planned:
+# Planned
 - Startup Registry Monitoring <br>
 - Task Scheduler Monitoring <br>
 - Looking into how to integrate WMI <br>
