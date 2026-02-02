@@ -36,6 +36,9 @@
     <ClCompile Include="VbsProtector.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="TaskSchedulerMonitor.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ext\plog\Appenders\AndroidAppender.h">
@@ -135,6 +138,9 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="VbsProtector.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskSchedulerMonitor.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
