@@ -4,6 +4,11 @@
 #include <filesystem>
 #include <atomic>
 #include <thread>
+#include <chrono>
+#include <ShlObj_core.h>
+#include <windows.h>
+#include "FileUtils.h"
+#include "Logger.h"
 
 class StartupFolderMonitor {
 public:
@@ -11,7 +16,7 @@ public:
 
     /* @brief Constructor which calls after creating Handles load lastsnapshot which creates a snapshot or reads the last one.
     */
-    StartupFolderMonitor(FolderType type, int intervalSeconds);
+    StartupFolderMonitor(FolderType type);
 
     /* @brief Destructor of the StartupFolderMonitor Object, also triggers the StopMonitoring
     */
@@ -29,11 +34,10 @@ private:
     FolderType folderType;
     std::filesystem::path folderPath;
     std::set<std::string> previousFiles;
-    int intervalSeconds;
     std::atomic<bool> running;
     std::thread monitorThread;
 
-    /* @brief Monitor Loop which looks for changes with the detectChanges method and sleeps the time which got defined in intervalSeconds
+    /* @brief Monitor Loop which looks for changes event based
     */
     void monitorLoop();
 
@@ -45,5 +49,4 @@ private:
     /* @brief Gets called in the Constructor and loads & reads the last Snapshot. If its not existing he creates one
     */
     void loadLastSnapshot();
-    void detectChanges(const std::set<std::string>& currentFiles);
 };
