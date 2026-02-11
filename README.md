@@ -26,8 +26,8 @@ By Monitoring those 2 Factors we can almost say certain there is no Taskscheduli
   - Checks with ReadDirectoryChangesW Directory changes of the Windows/System32/Tasks Folder also with 0 polling and no perfomance issues :)  <br>
 
 
-Next:
--Startup Registry Monitoring
+Next: <br>
+- Startup Registry Monitoring
 
 Planned:
 - Looking into how to integrate WMI <br>
