@@ -23,17 +23,19 @@ This persistence via Taskscheduler is achieved by i think 2 mechanism im not 100
 It gets saved in a Registry Tree or lets say new Tasks get added there, and there is a xml file which also holds the Tasks scheduled.<br>
 By Monitoring those 2 Factors we can almost say certain there is no Taskscheduling without Kernel Tricks. <br>
   - Monitors Keys of HKLM & HKCU in the TaskScheduler Trees by utilizing RegNotifyChangeKeyValue which is a great way to check for changes but keeping performance on a normal level.<br>
-  - Will soon also check with ReadDirectoryChangesW Directory changes of the .xml from Taskscheduler also with 0 polling and no perfomance issues :)  <br>
+  - Checks with ReadDirectoryChangesW Directory changes of the Windows/System32/Tasks Folder also with 0 polling and no perfomance issues :)  <br>
 
-# Planned
-- Startup Registry Monitoring <br>
-- Task Scheduler Monitoring <br>
+
+Next:
+-Startup Registry Monitoring
+
+Planned:
 - Looking into how to integrate WMI <br>
 - Looking into ETW Provider Registration & Usage <br>
 - Static File Analysis with Heuristik Result <br>
 - Extended Handling of Cases<br>
-Much more..
-
+...
+  
 # Screenshot
 <img width="977" height="514" alt="grafik" src="https://github.com/user-attachments/assets/bb717a87-8662-4059-a8f8-fbced2e52acc" />
 
