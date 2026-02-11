@@ -21,6 +21,7 @@ StartupFolderMonitor::StartupFolderMonitor(FolderType type)
     CoTaskMemFree(path);
 
     loadLastSnapshot();
+    StartMonitoring();
 }
 
 StartupFolderMonitor::~StartupFolderMonitor() {

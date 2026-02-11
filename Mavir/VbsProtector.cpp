@@ -53,7 +53,7 @@ void VbsProtector::monitorLoop() {
                 );
                 PLOG_WARNING << ".vbs Files were disabled";
 
-                std::this_thread::sleep_for(std::chrono::milliseconds(1)); // was earlier 50 ms but can be like a condition where malicious code executes exactly then
+                std::this_thread::sleep_for(std::chrono::milliseconds(1)); // was earlier 50 ms but this can be  a condition where malicious code executes exactly then
             }
         }
     }

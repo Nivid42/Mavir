@@ -18,7 +18,7 @@ public:
     */
     StartupFolderMonitor(FolderType type);
 
-    /* @brief Destructor of the StartupFolderMonitor Object, also triggers the StopMonitoring
+    /* @brief Destructor of the StartupFolderMonitor Object, also triggers the StopMonitoring Function
     */
     ~StartupFolderMonitor();
     
@@ -41,7 +41,7 @@ private:
     */
     void monitorLoop();
 
-    /* @brief Used to generate a new Snapshot Path when a new File is detected in the Startup Path  
+    /* @brief Used to get a new Snapshot Path when a new File is detected in the Startup Path  
     *  @return Returns a Path concatenated with a new Timestamp and the needed suffix
     */
     std::filesystem::path getSnapshotPath() const;
