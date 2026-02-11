@@ -95,10 +95,12 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)/ext
+</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -123,10 +125,12 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)/ext
+</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -136,6 +140,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="StartupFolderMonitor.cpp" />
+    <ClCompile Include="TaskSchedulerFolderMonitor.cpp" />
     <ClCompile Include="TaskSchedulerMonitor.cpp" />
     <ClCompile Include="VbsProtector.cpp" />
   </ItemGroup>
@@ -172,6 +177,7 @@
     <ClInclude Include="Logger.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="StartupFolderMonitor.h" />
+    <ClInclude Include="TaskSchedulerFolderMonitor.h" />
     <ClInclude Include="TaskSchedulerMonitor.h" />
     <ClInclude Include="VbsProtector.h" />
   </ItemGroup>

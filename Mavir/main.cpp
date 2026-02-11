@@ -1,6 +1,7 @@
 ﻿#include "StartupFolderMonitor.h"
 #include "VbsProtector.h"
 #include "TaskSchedulerMonitor.h"
+#include "TaskSchedulerFolderMonitor.h"
 #include "Logger.h"
 #include "Menu.h"
 
@@ -36,9 +37,10 @@ int main() {
     std::cout << "[+] Starting Mavir Antivirus Background-Scans...\n";
 
     {
-        TaskSchedulerMonitor taskSys;
-        StartupFolderMonitor userStartupFolderMonitor(StartupFolderMonitor::FolderType::User, 10);
-        StartupFolderMonitor adminStartupFolderMonitor(StartupFolderMonitor::FolderType::Admin, 10);
+        TaskSchedulerMonitor taskSchedulerMonitor;
+        TaskSchedulerFolderMonitor taskSchedulerFolderMonitor;
+        StartupFolderMonitor userStartupFolderMonitor(StartupFolderMonitor::FolderType::User);
+        StartupFolderMonitor adminStartupFolderMonitor(StartupFolderMonitor::FolderType::Admin);
         VbsProtector vbsUser(VbsProtector::KeyType::User);
         VbsProtector vbsSystem(VbsProtector::KeyType::System);
 
